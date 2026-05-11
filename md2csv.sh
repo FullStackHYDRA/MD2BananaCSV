@@ -1,5 +1,5 @@
 
-if [ -z "$1"]; then
+if [ -z "$1" ]; then
     echo "Nutzt: $0 dateiname.md"
     exit
 fi
