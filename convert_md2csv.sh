@@ -1,7 +1,6 @@
 source .env.banana
-OUTPUT_DIR=csv_output
 
 MD_BUFFER=$(cat $MARKDOWN_SOURCE)
 
-mkdir -p $OUTPUT_DIR && cd $OUTPUT_DIR
+mkdir -p $MARKDOWN_TARGET && cd $MARKDOWN_TARGET
 echo $MD_BUFFER > "output.csv"
