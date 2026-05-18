@@ -1,9 +1,9 @@
-if [[ -f .env.banana ]]; then
+ENV=.env.banana
+
+if [[ -f $ENV ]]; then
     echo "It looks like you've already done your setup great job AiKi."
     exit 1
 fi
-
-ENV=.env.banana
 
 touch $ENV
 
