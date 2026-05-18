@@ -1,6 +1,6 @@
 source .env.banana
 
-MD_BUFFER=$(cat $MARKDOWN_SOURCE)
+CSV_CONTENT=$(sed -n '/\[csv\]/,/\[\/csv\]/p' "$MARKDOWN_SOURCE" | sed '1d;$d')
 
-mkdir -p $MARKDOWN_TARGET && cd $CSV_TARGET
-echo $MD_BUFFER > "output.csv"
+mkdir -p "$CSV_TARGET" && cd $CSV_TARGET
+echo "$CSV_CONTENT" > "output.csv"
