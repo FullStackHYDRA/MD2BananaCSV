@@ -1,6 +1,6 @@
 source .env.banana
 
-CSV_CONTENT=$(awk -F':: ' '/^- / {gsub(/[[:space:]]*#card.*/, ""); gsub(/^- /, ""); q=$0; next} /card-/ {next} /^[[:space:]]+-/ {gsub(/^[[:space:]]+-\s*/, ""); print "\"" q "\",\"" $0 "\""}' "$MARKDOWN_SOURCE")
+CSV_CONTENT=$(awk -v sep="$CSV_SEPARATOR" -F':: ' '/^- / {gsub(/[[:space:]]*#card.*/, ""); gsub(/^- /, ""); q=$0; next} /card-/ {next} /^[[:space:]]+-/ {gsub(/^[[:space:]]+-\s*/, ""); print "\"" q "\"" sep "\"" $0 "\""}' "$MARKDOWN_SOURCE")
 TAG_PATH=$(awk '/^- .*#card/ {sub(/.*#card /, ""); print; exit}' "$MARKDOWN_SOURCE" | sed 's/#//g; s/[[:space:]][[:space:]]*/\//g')
 
 TARGET_PATH="$CSV_TARGET/$TAG_PATH"

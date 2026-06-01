@@ -18,4 +18,7 @@ done
 mkdir "$csv_target"
 echo "CSV_TARGET=$csv_target" >> $ENV
 
+read -p "Enter your CSV separator (| , ;): " csv_separator
+echo "CSV_SEPARATOR=\"$csv_separator\"" >> $ENV
+
 echo "Successfully set up MD2BananaCSV!"
