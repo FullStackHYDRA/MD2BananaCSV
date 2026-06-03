@@ -6,20 +6,22 @@ An automated Bash script tailored for Application Developers to effortlessly con
 
 As application developers, we face a lot of theoretical knowledge. Anki is a powerful tool for active recall, but creating flashcards manually via the Anki UI is tedious. **MD2BananaCSV** allows you to write your study notes directly in Markdown and use the CLI to instantly generate Anki-ready CSV imports.
 
-* ** M122 Focus:** End-to-end automation via Bash, strict error handling, and robust CLI parameter parsing.
-* ** M431 Focus: ** Plan and set up a project with a method IPERKA and also includes documentation (Markdown-to-CSV transformation).
+* **M122 Focus:** End-to-end automation via Bash, strict error handling, and robust CLI parameter parsing.
+* **M431 Focus:** Planning and setting up a project using the method IPERKA as well as documenting the process (Markdown-to-CSV transformation).
 
 ## Features
 
 * **Automated Parsing:** Splits Markdown headers or list items into clear Front/Back question pairs.
-* **Data Sanitization:** Cleans up special characters and ensures the CSV delimiter, that you pick with the setup.sh script (e.g., semicolon `;` or pipes `|`) doesn't break your Anki import.
+* **Data Sanitization:** Cleans up special characters and ensures the CSV delimiter, that you pick with the `setup.sh` script (e.g., semicolon `;` or pipes `|`) doesn't break your Anki import.
 * **Input Validation:** Pre-checks if files exist and validates data integrity before processing.
 
-##  Prerequisites
+## Prerequisites
 
 This script runs natively on Linux. Windows users can run it via Git Bash or WSL (Windows Subsystem for Linux).
+
 * Bash (v4.0 or higher)
 * Core utilities: `sed`, `awk`, `grep`
+* Node.js (v26.3.0 or higher)
 
 ## Installation & Setup
 
