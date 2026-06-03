@@ -16,3 +16,5 @@ for file in "$MARKDOWN_SOURCE"/**/*.md; do
     echo "$CSV_CONTENT" > "$TARGET_FILE"
     echo "  Contains flashcards: CSV written"
 done
+
+echo "Successfully synced all .md files!"
