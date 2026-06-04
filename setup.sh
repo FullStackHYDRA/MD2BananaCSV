@@ -1,11 +1,7 @@
 ENV=.env.banana
 
-if [[ -f $ENV ]]; then
-    echo "It looks like you've already done your setup great job AiKi."
-    exit 1
-fi
-
-touch $ENV
+rm "$ENV" 2> /dev/null
+touch "$ENV"
 
 read -e -rp "Enter your source markdown path: " md_source
 echo "MARKDOWN_SOURCE=\"$md_source\"" >> $ENV
