@@ -21,6 +21,7 @@ if [ "$askyesno_autosync" == "y" ]; then
     echo "Installing chokidar..."
     sudo npm install -g chokidar-cli > /dev/null
 
+    chmod +x "./md2csv.sh"
     nohup bash autosync.sh >/dev/null 2>&1 &
 
     echo "Enabled autosync." && echo
