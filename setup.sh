@@ -3,10 +3,10 @@ ENV=.env.banana
 rm "$ENV" 2> /dev/null
 touch "$ENV"
 
-read -e -rp "Enter your source markdown path: " md_source
+read -e -rp "Enter your source markdown directory: " md_source
 echo "MARKDOWN_SOURCE=\"$md_source\"" >> $ENV
 
-read -e -rp "Enter your output directory: " csv_target
+read -e -rp "Enter your target csv directory: " csv_target
 mkdir -p "$csv_target"
 echo "CSV_TARGET=\"$csv_target\"" >> $ENV
 
