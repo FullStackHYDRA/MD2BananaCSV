@@ -12,7 +12,7 @@ As application developers, we face a lot of theoretical knowledge. Anki is a pow
 ## Features
 
 * **Automated Parsing:** Splits Markdown headers or list items into clear Front/Back question pairs.
-* **Data Sanitization:** Cleans up special characters and ensures the CSV delimiter, that you pick with the `setup.sh` script (e.g., semicolon `;` or pipes `|`) doesn't break your Anki import.
+* **Data Sanitization:** Cleans up special characters and ensures the CSV delimiter that you pick with the `setup.sh` script (e.g. semicolon `;` or pipe `|`) doesn't break your Anki import.
 * **Input Validation:** Pre-checks if files exist and validates data integrity before processing.
 
 ## Autosync
