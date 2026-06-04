@@ -1,3 +1,3 @@
 source .env.banana
 
-chokidar "$MARKDOWN_SOURCE/**/*.md" -c "./md2csv.sh"
+chokidar -p "$MARKDOWN_SOURCE/**/*.md" -c "bash ./md2csv.sh"
