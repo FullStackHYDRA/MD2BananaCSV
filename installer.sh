@@ -1,2 +1,2 @@
 git clone https://github.com/FullStackHYDRA/MD2BananaCSV.git
-bash setup.sh
+bash ./MD2BananaCSV/setup.sh
