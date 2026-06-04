@@ -15,13 +15,21 @@ As application developers, we face a lot of theoretical knowledge. Anki is a pow
 * **Data Sanitization:** Cleans up special characters and ensures the CSV delimiter, that you pick with the `setup.sh` script (e.g., semicolon `;` or pipes `|`) doesn't break your Anki import.
 * **Input Validation:** Pre-checks if files exist and validates data integrity before processing.
 
+## Autosync
+
+This project additionally features an automatic sync of your specified `.md` files with the auto-generated `.csv` files.
+Please note that this feature only works on Linux and requires elevated rights.
+
 ## Prerequisites
 
-This script runs natively on Linux. Windows users can run it via Git Bash or WSL (Windows Subsystem for Linux).
+This script runs natively on Linux. Windows users must run it via Git Bash or WSL (Windows Subsystem for Linux).
+
+Note that if any of the following utilities marked by "(*)" are automatically installed if they don't exist on your system. They are only required for autosync.
 
 * Bash (v4.0 or higher)
 * Core utilities: `sed`, `awk`, `grep`
-* Node.js (v26.3.0 or higher)
+* Node.js (v26.3.0 or higher) (*)
+* chokidar (*)
 
 ## Installation & Setup
 
