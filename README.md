@@ -33,16 +33,17 @@ Note that if any of the following utilities marked by "(*)" are automatically in
 
 ## Installation & Setup
 
-### Manual installation
+### Step-by-step guide
 
 1. Clone the repository
-2. Run setup.sh
-3. If autosync wasn't enabled: Run md2csv.sh
-
-### Automatic installation
-
-Copy the following command and paste it into your terminal:
-
-```bash
-curl -fsSl https://raw.githubusercontent.com/FullStackHYDRA/MD2BananaCSV/refs/heads/main/installer.sh | sh
-```
+   ```bash
+   git clone https://github.com/FullStackHYDRA/MD2BananaCSV.git
+   ```
+2. Run `setup.sh`
+   ```bash
+   cd MD2BananaCSV && bash setup.sh
+   ```
+3. If autosync wasn't enabled, run `md2csv.sh`
+   ```bash
+   bash md2csv.sh
+   ```
