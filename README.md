@@ -15,6 +15,11 @@ As application developers, we face a lot of theoretical knowledge. Anki is a pow
 * **Data Sanitization:** Cleans up special characters and ensures the CSV delimiter that you pick with the `setup.sh` script (e.g. semicolon `;` or pipe `|`) doesn't break your Anki import.
 * **Input Validation:** Pre-checks if files exist and validates data integrity before processing.
 
+## Important notes
+
+* Make sure **NOT TO USE** a `/` at the end of the path!
+* Do **NOT USE** either relative paths or reference the home directory by `~`
+
 ## Autosync
 
 This project additionally features an automatic sync of your specified `.md` files with the auto-generated `.csv` files.
