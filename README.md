@@ -52,3 +52,12 @@ Note that if any of the following utilities marked by "(*)" are automatically in
    ```bash
    bash md2csv.sh
    ```
+
+## Credits
+
+
+| Contributor | Role / Contributions | GitHub |
+| :--- | :--- | :--- |
+| **Joshua** | Core Bash Scripting & Automation | [@joshua-schoeschi](https://github.com/schoeschi) |
+| **Andrew** | Testing, Flowcharts & Documentation | [@andrew-FullStackHYDRA](https://github.com/FullStackHYDRA) |
+
