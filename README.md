@@ -58,6 +58,6 @@ Note that if any of the following utilities marked by "(*)" are automatically in
 
 | Contributor | Role / Contributions | GitHub |
 | :--- | :--- | :--- |
-| **Joshua** | Core Bash Scripting & Automation | [@joshua-schoeschi](https://github.com/schoeschi) |
-| **Andrew** | Testing, Flowcharts & Documentation | [@andrew-FullStackHYDRA](https://github.com/FullStackHYDRA) |
+| **Joshua** | Core Bash Scripting & Automation | [@schoeschi](https://github.com/schoeschi) (Joshua) |
+| **Andrew** | Testing, Flowcharts & Documentation | [@FullStackHYDRA](https://github.com/FullStackHYDRA) (Andrew) |
 
